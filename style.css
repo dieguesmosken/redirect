@@ -4,13 +4,20 @@
     /* border: 2px solid #292e1e; */
     box-sizing: border-box
   }
- 
+  :root {
+    --cor-primaria: #191A19;
+    --cor-secundaria: #1E5128;
+    --cor-terciaria: #4E9F3D;
+    --cor-hover: #D8E9A8;
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1E272E;
+    background-color: var(--cor-primaria);
     width: 100vw;
     height: 100vh;
 }
@@ -23,12 +30,22 @@ body {
     width: 80%;
     height: 300px;
     margin-top: -100px;
+    border-radius: 20px;
+   
+   
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    
+    transition: .5s;
+
 }
 
 .title {
     font-size: 35px;
     margin-bottom: 20px;
-    color: #FFF;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    padding: 10px;  
     
 }
  
@@ -45,7 +62,7 @@ body {
     width: 40%;
     border-radius: 50px;
     font-size: 20px;
-    color: #1E272E;
+    color: var(--cor-secundaria);
 }
  
 .btn {
@@ -53,14 +70,16 @@ body {
     width: 170px;
     margin-left: 10px;
     border-radius: 50px;
-    background-color: #ffb12a;
+    background-color: var(--cor-terciaria);
     font-size: 20px;
-    color: #1E272E;
+    color: var(--cor-hover);
+    font-family: var(--fonte-secundaria);
 }
  
 .btn:hover {
     transition: .5s;
-    background-color: #fa8100;
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
 }
 
 .icon-box {
@@ -76,7 +95,7 @@ body {
     margin: 0 0px;
     font-size: 40px;
     margin: 10px 10px;
-    color: #ffb12a;
+    color: var(--cor-terciaria);
 }
 
 .footer {
@@ -91,19 +110,19 @@ body {
 }
 
 .footer a {
-    color: #ffb12a;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .footer a:visited {
-    color: #352aff;
+    color: var(--cor-hover);
 }
 
 .footer a:hover {
-    color: #fa8100;
+    color: var(--cor-hover);
 }
 .footer a:link {
-    color: #ffb12a;
+    color: var(--cor-terciaria)
 }
 
 i {
