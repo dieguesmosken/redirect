@@ -33,7 +33,7 @@ body {
     border-radius: 20px;
    
    
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); */
     padding: 30px;
     
     transition: .5s;
@@ -94,7 +94,7 @@ body {
     
     margin: 0 0px;
     font-size: 40px;
-    margin: 10px 10px;
+   
     color: var(--cor-terciaria);
 }
 
