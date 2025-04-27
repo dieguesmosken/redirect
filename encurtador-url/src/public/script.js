@@ -16,7 +16,6 @@ function encurtarUrl() {
     .then(data => {
         if (data.shortUrl) {
             let input = document.getElementById("input-url");
-            // Mostra a URL encurtada completa
             input.value = window.location.origin + "/api/urls/" + data.shortUrl;
         } else {
             alert("Erro ao encurtar a URL");
