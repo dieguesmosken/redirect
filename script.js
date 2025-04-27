@@ -5,7 +5,7 @@ function encurtarUrl() {
         return;
     }
 
-    fetch("/api/urls/shorten", {
+    fetch("https://redirect-68qu.onrender.com/api/urls/shorten", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
